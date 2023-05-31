@@ -1,5 +1,4 @@
 project: egui-graphs
 target: graph-edge
-image: ghcr.io/lotdeef/egui_graphs:latest
 cmds:
     - cmd: /graph_edge

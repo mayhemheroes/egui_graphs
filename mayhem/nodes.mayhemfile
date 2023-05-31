@@ -1,5 +1,4 @@
 project: egui-graphs
 target: nodes
-image: ghcr.io/lotdeef/egui_graphs:latest
 cmds:
     - cmd: /nodes
