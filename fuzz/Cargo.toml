@@ -1,0 +1,64 @@
+[package]
+name = "egui-graphs-fuzz"
+version = "0.0.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+honggfuzz = "0.5.55"
+egui = "0.22"
+petgraph = "0.6"
+fdg-sim = "0.9"
+
+[dependencies.egui_graphs]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "graph_all"
+path = "fuzz_targets/graph_all.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "graph_edge"
+path = "fuzz_targets/graph_edge.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "graph_node"
+path = "fuzz_targets/graph_node.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "nodes"
+path = "fuzz_targets/nodes.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "run_simulation"
+path = "fuzz_targets/run_simulation.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "simulate_all"
+path = "fuzz_targets/simulate_all.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "simulation"
+path = "fuzz_targets/simulation.rs"
+test = false
+doc = false
