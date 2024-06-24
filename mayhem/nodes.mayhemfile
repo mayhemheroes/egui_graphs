@@ -1,0 +1,4 @@
+project: egui-graphs
+target: nodes
+cmds:
+    - cmd: /nodes

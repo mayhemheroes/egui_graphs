@@ -1,0 +1,4 @@
+project: egui-graphs
+target: simulation
+cmds:
+    - cmd: /simulation

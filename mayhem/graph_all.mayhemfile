@@ -1,0 +1,4 @@
+project: egui-graphs
+target: graph-all
+cmds:
+    - cmd: /graph_all

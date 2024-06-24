@@ -1,0 +1,4 @@
+project: egui-graphs
+target: simulate-all
+cmds:
+    - cmd: /simulate_all
